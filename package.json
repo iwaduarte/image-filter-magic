@@ -1,9 +1,9 @@
 {
-  "name": "tweak",
+  "name": "image-filter-magic",
   "private": false,
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://iwaduarte.github.io/tweak",
+  "homepage": "https://iwaduarte.github.io/image-filter-magic",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
