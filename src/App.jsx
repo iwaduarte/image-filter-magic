@@ -99,16 +99,18 @@ const App = () => {
 
   return (
     <div className="App">
-      <label htmlFor="file"> Add Image </label>
-      <input
-        name="file"
-        id="file"
-        type="file"
-        onChange={handleImageChange}
-        accept="image/*"
-      />
+      <h1 className="app-title">Image Filter Magic 🌈</h1>
 
       <div className="actions">
+        <label htmlFor="file"> Add Image </label>
+        <input
+          name="file"
+          id="file"
+          type="file"
+          onChange={handleImageChange}
+          accept="image/*"
+        />
+
         <button onClick={() => handleFilter("vintage")}>
           Add/Increase Vintage
         </button>
@@ -119,7 +121,9 @@ const App = () => {
         <button onClick={resetImage}> Reset</button>
         <button onClick={saveImage}> Download Image </button>
       </div>
-      <canvas ref={canvasRef} width={800} height={800} />
+      <div className="canvas">
+        <canvas ref={canvasRef} width={800} height={800} />
+      </div>
     </div>
   );
 };
